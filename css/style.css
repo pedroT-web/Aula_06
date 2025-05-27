@@ -1,0 +1,56 @@
+*{
+    /* Zerando a margen */
+    margin: 0;
+}
+
+.container{
+    /* esses valores do padding sendo o primeiro valor a altura e baixura e o segundo valor sendo da largura, a % serve para identificar quantos porcento da tela ele usará */
+    padding: 0 15%;
+
+    /* vw--> Viewport width define a largura da janela de visualização */
+    width: 70vw;
+    
+}
+
+.grid{
+    /* transforma em uma grade, usando linhas e colunas */
+    display: grid;
+
+    /* Define um espaçamento entre as linhas e colunas */
+    gap: 10px;
+
+    /* grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 200px); --> repeat é uma função que repete algo de desejo */
+
+    /* row-gap: 10px; --> cria um espaçamento entre as linhas apenas*/ 
+
+    /* column-gap: 10px;1  --> cria um espaçamento entre as colunas apenas */
+}
+.linha{
+    /* grid-template-rows define quantas linhas terá e o tamanho de cada uma delas */
+    grid-template-rows: repeat(4, 200px);
+}
+.coluna{
+    /*grid-template-columns define quantas colunas terão e o tamnho de cada uma */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.coluna-2{
+    /* 1fr frame--> uma fatia da tela*/
+    grid-template-columns: 1fr 2fr;
+}
+.coluna-3{
+    grid-template-columns: 2fr 1fr;
+}
+.box{
+    /* define a altura do objeto sendo a % para identificar a quantos % do espaço ele usará*/
+    width: 100%;
+    /* define a largura do objeto sendo a % para identificar a quantos % do espaço ele usará*/
+    height: 100%;
+
+    background-color: tomato;
+
+    margin: 10px;
+
+    text-align: center;
+    align-content: center;
+}
